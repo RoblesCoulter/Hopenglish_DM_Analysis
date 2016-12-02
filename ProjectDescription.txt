@@ -1,0 +1,36 @@
+Hi all,
+
+This semester we have received an interesting dataset related to an e-learning platform. In short, the online platform provides different alternatives to efficiently learn the English language through the use of multimedia content, such as video clips and audio recordings.
+
+2016 Data mining Final Project Specifications:
+
+1. Your first task is to find out more about what the company does and what their vision is. On that note, here is a link to their website (be aware that it is in mandarin). Once you understand what the platform is all about, your next task is to download and analyze the dataset provided to you. It is important to understand that if you jump straight into the data without understanding where it comes from or how it is being generated, then you might be at a disadvantage. We highly recommend that you do your research first before beginning to play with the data provided to you.
+
+2. After doing your research, the main goal of the project is to find some interesting patterns in the dataset. In other words we expect you to use the tools and techniques learn in the Datamining course to mine something surprising or interesting from the datasets provided to you.
+
+3. Before starting to do final project, please form a 6-8 people group, fill in the group table and download the dataset. First you need to study the data properly and prepare a proposal, which is to be presented in class.
+
+4. The proposal must include detailed and clear explanations of what knowledge you plan to extract from this dataset. Remember this is a Data mining project so your proposal has to be related to some data-mining technique. As a tip, you can prepare more than one proposal if you believe one is not strong enough. The faster you decide the task you want to work on, the quicker you can move on to work on the implementation of the project.
+
+ 5. After you have presented your proposal and we have approved it, you are to implement and report your analysis, techniques, methodology, evaluation and results. In the reports, you will be asked to provide regular weekly updates of your progress. These presentations are important because through them we will be able to provide feedback and monitor your progress. We will be announcing the dates in which you will need to present your progress and updates. We will also be providing more information of what is required from this project as time progresses.
+
+To assist in the understanding of the data, below are some additional descriptions of the attributes found in the datasets.
+
+In the videoDataInfo.csv (for video) :
+
+   postId: index of video.
+   wordLevel: the difficulty of the word.
+   videoSpeed: the speed of accent in the video.
+   subtitleLengthRatio: the proportion of the long sentence on the video, the longer it is, the harder it is.
+   sectionLength: the number of the section in the video, each section will be assigned an  postId.
+   wordList: the word in the video.
+
+
+In the studentBehaviorInfo_1&2.json (learning behavior from 2000&2000 students):
+
+   chosenVideo: an array to store the video (postId) which is chose by students.
+   vocabularyList: an array to  store elements in the dictionary format (postId,word). Such as(3913,world) -> means that the user stored the word “world” from the video 3913.
+   memberId: user id.
+   listenScore: an array to  store elements in the dictionary format (postId,score), and each will be assigned a score which means that a video may have many scores.  Such as (5186,97), 97 means that the user get the 97 score in the video 5186. (3913,-1) , -1 means that user haven't done this test yet. Note that  video “3913” has 5 sections(sectionLength=5), each section will has its score. So in the dataset it would be sorted like (3913,95),(3913,92),(3913,95),(3913,96),(3913,97),(5186,97)......  (5186,97) means the first section of another video.
+
+If you have any other questions, please ask it here. 
